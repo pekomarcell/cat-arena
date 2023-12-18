@@ -1,0 +1,15 @@
+<div class="add-cat-div">
+    <div class="form-floating">
+        <input type="text" class="form-control" id="floatingPassword" [(ngModel)]="name"  >
+        <label for="floatingPassword">Name</label>
+      </div>
+      <div class="form-floating">
+        <input type="number" class="form-control" id="floatingPassword" [(ngModel)]="atk">
+        <label for="floatingPassword">ATK</label>
+      </div>
+      <div class="form-floating">
+        <input type="number" class="form-control" id="floatingPassword" [(ngModel)]="def">
+        <label for="floatingPassword">DEF</label>
+      </div>
+    <button type="button" class="btn btn-primary" (click)="addCat()" >Add a cat</button>
+</div>
