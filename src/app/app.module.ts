@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { CatComponent } from './cat/cat.component';
 import { AddCatComponent } from './add-cat/add-cat.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BattlefieldComponent } from './battlefield/battlefield.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     CatComponent,
     AddCatComponent,
+    BattlefieldComponent,
     
   ],
   imports: [
