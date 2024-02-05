@@ -9,7 +9,7 @@ import { Kiscica } from 'src/types/cat-type';
 })
 export class CatsComponent implements OnInit {
   cats:any =  []
-  selectedCat?:Kiscica
+  editedCat?:Kiscica
 
   constructor(private db:DbService){}
   ngOnInit(): void {
@@ -20,12 +20,21 @@ export class CatsComponent implements OnInit {
      )
   }
 
-  editSelectedCat(cat:Kiscica){
-     this.selectedCat = cat
+  editCat(cat:Kiscica){
+     this.editedCat = cat
   }
 
   closeEditModal(){
-    this.selectedCat = undefined
+    this.editedCat = undefined
+  }
+
+  deleteSelectedCat(deletedCat:Kiscica){
+    this.db.deleteCat(deletedCat).subscribe(
+      ()=>{
+        window.location.reload()
+        //console.log("Cica törölve")
+      }
+    )
   }
 
 }

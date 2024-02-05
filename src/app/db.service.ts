@@ -33,4 +33,11 @@ export class DbService {
       headers: this.headers
     })
   }
+
+  deleteCat(deletedCat: Kiscica){
+    return this.http.delete("http://localhost:3000/cats/" + deletedCat.id,{
+      headers: this.headers
+    })
+  }
+
 }
