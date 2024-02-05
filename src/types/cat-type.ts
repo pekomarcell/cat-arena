@@ -1,1 +1,1 @@
-export interface Kiscica  {name:string, atk:number, def:number, img?:string}
+export interface Kiscica  {id?:number, name:string, atk:number, def:number, img?:string}

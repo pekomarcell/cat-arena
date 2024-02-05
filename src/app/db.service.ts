@@ -1,31 +1,36 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Kiscica } from 'src/types/cat-type';
+import { Injectable } from "@angular/core";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { Kiscica } from "src/types/cat-type";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class DbService {
+  
+  headers = new HttpHeaders({
+    "Content-Type": "application/json",
+  });
+
+  constructor(private http: HttpClient) {}
 
 
+  getAllCats() {
+    return this.http.get("http://localhost:3000/cats");
+  }
 
-  constructor(private http:HttpClient) { }
+  //Csináljunk cashelést
 
- getAllCats(){
-  return this.http.get("http://localhost:3000/cats")
-}
+  addCat(cat: Kiscica) {
+   
+    return this.http.post("http://localhost:3000/cats", cat, {
+      headers: this.headers,
+    });
+  }
 
-//Csináljunk cashelést 
-
-addCat(cat:Kiscica){
-  let headers = new HttpHeaders(
-    {
-      "Content-Type": "application/json" 
-    }
-  )
-  return this.http.post("http://localhost:3000/cats", cat,  {
-    headers: headers
-} )
-}
-
+  editCat(cat: Kiscica) {
+    
+    return this.http.put("http://localhost:3000/cats/" + cat.id, cat,{
+      headers: this.headers
+    })
+  }
 }

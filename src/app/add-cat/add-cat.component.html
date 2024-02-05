@@ -15,5 +15,6 @@
         <input type="text" class="form-control" [(ngModel)]="img">
         <label>Image url</label>
       </div>
-    <button type="button" class="btn btn-primary" (click)="addCat()">Add a cat</button>
+    <button *ngIf="!cat"  type="button" class="btn btn-primary" (click)="addCat()">Add a cat</button>
+    <button *ngIf="cat"   type="button" class="btn btn-primary" (click)="editCat()">Edit a cat</button>
 </div>

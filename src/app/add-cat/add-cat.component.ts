@@ -16,6 +16,8 @@ export class AddCatComponent implements OnInit {
   def =  0 
   img?:string =  "" 
 
+
+
   constructor(private db: DbService) {}
   ngOnInit(): void {
     
@@ -41,6 +43,15 @@ export class AddCatComponent implements OnInit {
 
   editCat(){
 
+    //console.log({name: this.name, atk: this.atk, def: this.def, img: this.img})
+    let editedCat:Kiscica = {id: this.cat?.id, name: this.name, atk: this.atk, def: this.def, img: this.img}
+    this.db.editCat(editedCat).subscribe(()=>{
+      console.log("Cica frissítve")
+      window.location.reload() 
+    })
+    
   }
+
+  
 
 }
