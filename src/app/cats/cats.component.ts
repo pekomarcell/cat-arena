@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DbService } from '../db.service';
+import { Kiscica } from 'src/types/cat-type';
 
 @Component({
   selector: 'app-cats',
@@ -8,6 +9,7 @@ import { DbService } from '../db.service';
 })
 export class CatsComponent implements OnInit {
   cats:any =  []
+  selectedCat?:Kiscica
 
   constructor(private db:DbService){}
   ngOnInit(): void {
@@ -17,5 +19,14 @@ export class CatsComponent implements OnInit {
       }
      )
   }
+
+  editSelectedCat(cat:Kiscica){
+     this.selectedCat = cat
+  }
+
+  closeEditModal(){
+    this.selectedCat = undefined
+  }
+
 }
 
