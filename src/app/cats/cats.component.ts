@@ -10,6 +10,7 @@ import { Kiscica } from 'src/types/cat-type';
 export class CatsComponent implements OnInit {
   cats:any =  []
   editedCat?:Kiscica
+  deletedCat?:Kiscica
 
   constructor(private db:DbService){}
   ngOnInit(): void {
@@ -35,6 +36,14 @@ export class CatsComponent implements OnInit {
         //console.log("Cica törölve")
       }
     )
+  }
+
+  deleteCat(cat:Kiscica){
+    this.deletedCat = cat
+  }
+
+  closeDeleteCatModal(){
+    this.deletedCat = undefined
   }
 
 }
