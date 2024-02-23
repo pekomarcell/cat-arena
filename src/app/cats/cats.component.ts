@@ -1,24 +1,42 @@
 import { Component, OnInit } from '@angular/core';
 import { DbService } from '../db.service';
 import { Kiscica } from 'src/types/cat-type';
-
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-cats',
   templateUrl: './cats.component.html',
   styleUrls: ['./cats.component.css']
 })
 export class CatsComponent implements OnInit {
-  cats:any =  []
+  cats:Kiscica[] =  []
   editedCat?:Kiscica
   deletedCat?:Kiscica
+  search:string = ''
+  filteredCats?:Kiscica[] = []
 
-  constructor(private db:DbService){}
+  constructor(private db:DbService, private route:ActivatedRoute){}
   ngOnInit(): void {
      this.db.getAllCats().subscribe(
       (cats)=>{ 
         this.cats = cats
+        this.filteredCats = cats
       }
      )
+
+     this.route.queryParams.subscribe(
+      (params)=>{
+        this.search = params['key']
+        this.filteredCats = this.cats.filter((cat)=>
+        
+         cat.name.toLowerCase().includes(this.search.toLowerCase()) 
+
+        )
+        console.log(this.filteredCats)
+      }
+     )
+     
+     
+
   }
 
   editCat(cat:Kiscica){

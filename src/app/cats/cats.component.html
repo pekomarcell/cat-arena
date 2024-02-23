@@ -1,6 +1,6 @@
 <!-- <app-cat *ngFor="let cat of cats"[cat]="cat"></app-cat> -->
 <div class="cat-pictures-div">
-  <div *ngFor="let cat of cats">
+  <div *ngFor="let cat of filteredCats">
     <app-cat [cat]="cat"></app-cat>
 
     <button (click)="editCat(cat)" type="button" class="btn btn-primary" >

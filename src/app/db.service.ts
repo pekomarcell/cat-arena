@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Kiscica } from "src/types/cat-type";
+import { Observable } from "rxjs";
 
 @Injectable({
   providedIn: "root",
@@ -14,8 +15,9 @@ export class DbService {
   constructor(private http: HttpClient) {}
 
 
-  getAllCats() {
-    return this.http.get("http://localhost:3000/cats");
+  getAllCats():Observable<Kiscica[]> {
+    return this.http.get<Kiscica[]>("http://localhost:3000/cats");
+    
   }
 
   //Csináljunk cashelést
