@@ -1,24 +1,17 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  selector: "app-navbar",
+  templateUrl: "./navbar.component.html",
+  styleUrls: ["./navbar.component.css"],
 })
 export class NavbarComponent {
+  searchInput: any;
 
-  searchInput:any
+  constructor(private router: Router) {}
 
-
-  constructor( private router: Router ){}
-
-  search(){
-    this.router.navigate( 
-    ['cats'],
-      { queryParams: { key: this.searchInput} }
-    );
-    console.log(this.searchInput)
+  search() {
+    this.router.navigate(["cats"], { queryParams: { key: this.searchInput } });
   }
-
 }

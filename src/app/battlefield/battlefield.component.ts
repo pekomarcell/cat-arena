@@ -9,8 +9,11 @@ import { Kiscica } from 'src/types/cat-type';
 })
 export class BattlefieldComponent implements OnInit {
 
+  
+
   firstCatData?:Kiscica
   secondCatData?:Kiscica
+  isModalOpen:boolean = false
 
   constructor(private db:DbService){}
 
@@ -34,4 +37,12 @@ export class BattlefieldComponent implements OnInit {
       
   }
   
+  openModal(){
+    this.isModalOpen = true
+  }
+
+  closeModal(){
+    this.isModalOpen = false
+  }
+
 }

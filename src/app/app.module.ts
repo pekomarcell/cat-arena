@@ -12,6 +12,7 @@ import { CatComponent } from './cat/cat.component';
 import { AddCatComponent } from './add-cat/add-cat.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BattlefieldComponent } from './battlefield/battlefield.component';
+import { TimerComponent } from './timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { BattlefieldComponent } from './battlefield/battlefield.component';
     CatComponent,
     AddCatComponent,
     BattlefieldComponent,
+    TimerComponent,
     
   ],
   imports: [
