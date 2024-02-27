@@ -1,8 +1,9 @@
-.cat-pictures{
-object-fit: cover;
-width: 300px;
-height: 300px;
+.cat-pictures {
+  margin-top: 30px;
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
 }
-.cat-component-div{
-    text-align: center;
+.cat-component-div {
+  text-align: center;
 }

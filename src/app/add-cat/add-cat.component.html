@@ -1,5 +1,5 @@
 <div *ngIf="!loading"  class="add-cat-div">
-    <div class="form-floating">
+    <div class="form-floating ">
         <input type="text" class="form-control" [(ngModel)]="name"  >
         <label>Name</label>
       </div>
@@ -15,6 +15,6 @@
         <input type="text" class="form-control" [(ngModel)]="img">
         <label>Image url</label>
       </div>
-    <button *ngIf="!cat"  routerLink="/cats" type="button" class="btn btn-primary" (click)="addCat()">Add a cat</button>
-    <button *ngIf="cat"   type="button" class="btn btn-primary" (click)="editCat()">Edit a cat</button>
-</div>
+    <button *ngIf="!cat"  routerLink="/cats" type="button" class="btn btn-primary btn-space float-end" (click)="addCat()">Add a cat</button>
+    <button *ngIf="cat"   type="button" class="btn btn-primary btn-space float-end" (click)="editCat()">Edit cat</button>
+</div> 
