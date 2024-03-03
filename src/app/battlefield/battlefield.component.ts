@@ -30,7 +30,7 @@ export class BattlefieldComponent implements OnInit {
 
          this.secondCatData = cats[Math.floor(Math.random() * cats.length)]
        
-        console.log(this.firstCatData, this.secondCatData);
+       // console.log(this.firstCatData, this.secondCatData);
               
       }
     )

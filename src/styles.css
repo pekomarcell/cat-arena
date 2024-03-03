@@ -1,1 +1,11 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+body {
+    font-family: 'Courier New', Courier, monospace;
+  background: rgb(238, 218, 174);
+  background: radial-gradient(
+    circle,
+    rgba(238, 218, 174, 1) 71%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  margin-bottom: 10px;
+}
