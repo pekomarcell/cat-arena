@@ -1,31 +1,56 @@
 <div class="battlefield-data">
-<div>
+  <div>
     <app-cat *ngIf="firstCatData" [cat]="firstCatData"></app-cat>
-</div>
-<app-timer (openOnCountdown)="openModal()" ></app-timer>
-<div>
+  </div>
+  <app-timer (openOnCountdown)="openModal()"></app-timer>
+  <div>
     <app-cat *ngIf="secondCatData" [cat]="secondCatData"></app-cat>
-</div>
+  </div>
 </div>
 
- <!-- <button type="button" (click)="openModal()" class="btn btn-primary btn-lg">ATTACK</button>  -->
+<!-- <button type="button" (click)="openModal()" class="btn btn-primary btn-lg">ATTACK</button>  -->
 
-<div *ngIf="isModalOpen"  class="modal fade show" style="display: block" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">A csata véget ért</h5>
-          <button type="button" class="close" data-dismiss="modal" (click)="closeModal()" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          A Győztes: {{winner}}
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeModal()" routerLink="/home">Visszatérés a főoldalra</button>
-          <button type="button" class="btn btn-primary" (click)="newBattle()">Új Harc</button>
-        </div>
+<div
+  *ngIf="isModalOpen"
+  class="modal fade show"
+  style="display: block"
+  id="exampleModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">
+          A csata véget ért
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          (click)="closeModal()"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">A Győztes: {{ winner }}</div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal"
+          (click)="closeModal()"
+          routerLink="/home"
+        >
+          Visszatérés a főoldalra
+        </button>
+        <button type="button" class="btn btn-primary" (click)="newBattle()">
+          Új Harc
+        </button>
       </div>
     </div>
   </div>
+</div>

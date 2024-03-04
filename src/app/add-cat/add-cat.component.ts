@@ -41,7 +41,7 @@ export class AddCatComponent implements OnInit {
     };
     this.db.addCat(cat).subscribe(() => {
       this.router.navigate([`cats`]);
-      window.location.reload()
+      window.location.reload();
       console.log("cica hozzaadva");
     });
   }

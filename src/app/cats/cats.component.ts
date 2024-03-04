@@ -18,7 +18,10 @@ export class CatsComponent implements OnInit {
   ngOnInit(): void {
     this.db.getAllCats().subscribe((cats) => {
       this.cats = cats;
-      this.filteredCats = cats;
+
+      this.filteredCats = this.cats.filter((cat) =>
+        cat.name.toLowerCase().includes(this.search.toLowerCase())
+      );
     });
 
     this.route.queryParams.subscribe((params) => {

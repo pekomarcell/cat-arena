@@ -1,21 +1,21 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { AddCatComponent } from './add-cat.component';
+import { AddCatComponent } from "./add-cat.component";
 
-describe('AddCatComponent', () => {
+describe("AddCatComponent", () => {
   let component: AddCatComponent;
   let fixture: ComponentFixture<AddCatComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AddCatComponent]
+      declarations: [AddCatComponent],
     });
     fixture = TestBed.createComponent(AddCatComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
