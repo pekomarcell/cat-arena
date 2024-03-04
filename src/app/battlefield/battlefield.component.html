@@ -8,7 +8,7 @@
 </div>
 </div>
 
- <button type="button" (click)="openModal()" class="btn btn-primary btn-lg">ATTACK</button> 
+ <!-- <button type="button" (click)="openModal()" class="btn btn-primary btn-lg">ATTACK</button>  -->
 
 <div *ngIf="isModalOpen"  class="modal fade show" style="display: block" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -20,11 +20,11 @@
           </button>
         </div>
         <div class="modal-body">
-          A Győztes: 
+          A Győztes: {{winner}}
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="closeModal()" routerLink="/home">Visszatérés a főoldalra</button>
-          <button type="button" class="btn btn-primary">Új Harc</button>
+          <button type="button" class="btn btn-primary" (click)="newBattle()">Új Harc</button>
         </div>
       </div>
     </div>
