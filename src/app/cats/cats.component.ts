@@ -20,7 +20,7 @@ export class CatsComponent implements OnInit {
       this.cats = cats;
 
       this.filteredCats = this.cats.filter((cat) =>
-        cat.name.toLowerCase().includes(this.search.toLowerCase())
+        cat.name.toLowerCase().includes(this.search?.toLowerCase() || "")
       );
     });
 
