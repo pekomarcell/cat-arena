@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-backend": "npm --prefix cat-arenaAPI run start",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "install-dependencies": "npm install && cd cat-arenaAPI && npm install" 
-
+    "postinstall": "cd cat-arenaAPI && npm install"
   },
   "private": true,
   "dependencies": {
