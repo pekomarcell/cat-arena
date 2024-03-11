@@ -67,7 +67,7 @@
       "name": "Oliver",
       "atk": 99,
       "def": 99,
-      "img": "https://media.discordapp.net/attachments/1160177796358877237/1210310410058858596/PXL_20231217_134916469.jpg?ex=65ea1868&is=65d7a368&hm=cd7dbe7a79a6a16bb0c7f9b86420de31786c8aa1ca50dcde0337b3edb13b1057&=&format=webp&width=455&height=604",
+      "img": "./assets/PXL_20231217_134916469.jpg",
       "id": 11
     },
     {
