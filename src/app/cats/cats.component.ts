@@ -43,7 +43,6 @@ export class CatsComponent implements OnInit {
   deleteSelectedCat(deletedCat: Kiscica) {
     this.db.deleteCat(deletedCat).subscribe(() => {
       window.location.reload();
-      //console.log("Cica törölve")
     });
   }
 

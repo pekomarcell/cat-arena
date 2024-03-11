@@ -15,7 +15,6 @@ export class BattlefieldComponent implements OnInit {
 
   constructor(private db: DbService) {}
 
-  //const catFight = array[Math.floor(Math.random() * array.length)];
   ngOnInit(): any {
     this.randomCatGenerator();
   }
@@ -26,7 +25,6 @@ export class BattlefieldComponent implements OnInit {
 
       this.secondCatData = cats[Math.floor(Math.random() * cats.length)];
 
-      // console.log(this.firstCatData, this.secondCatData);
       let whoAttacksFirst: boolean = Math.random() <= 0.5;
 
       if (whoAttacksFirst) {

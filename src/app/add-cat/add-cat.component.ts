@@ -29,10 +29,7 @@ export class AddCatComponent implements OnInit {
       this.loading = false;
     }
   }
-  //Hozáad egy macskát a db-hez.
   addCat(): void {
-    //console.log(this.name)
-
     const cat: Kiscica = {
       name: this.name,
       atk: this.atk,
@@ -47,7 +44,6 @@ export class AddCatComponent implements OnInit {
   }
 
   editCat() {
-    //console.log({name: this.name, atk: this.atk, def: this.def, img: this.img})
     let editedCat: Kiscica = {
       id: this.cat?.id,
       name: this.name,
