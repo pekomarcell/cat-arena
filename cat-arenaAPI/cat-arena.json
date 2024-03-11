@@ -1,0 +1,137 @@
+{
+  "cats": [
+    {
+      "id": 1,
+      "name": "Cirmi",
+      "atk": 10,
+      "def": 20,
+      "img": "./assets/depositphotos_54998613-stock-photo-ginger-cat.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Bubbles",
+      "atk": 12,
+      "def": 60,
+      "img": "./assets/istockphoto-1067347086-612x612.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Sushi",
+      "atk": 60,
+      "def": 30,
+      "img": "./assets/pexels-marko-blazevic-774731.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Snorlax",
+      "atk": 99,
+      "def": 37,
+      "img": "./assets/pexels-pixabay-416160.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Főnix",
+      "atk": 40,
+      "def": 40,
+      "img": "https://i1.sndcdn.com/artworks-zyYqA8D0BdfuyH28-WeeHrw-t500x500.jpg"
+    },
+    {
+      "name": "Pepper",
+      "atk": 56,
+      "def": 15,
+      "img": "https://static.boredpanda.com/blog/wp-content/uploads/2020/03/5e665db0af320_lkh_FgmyN2CgSNyjPLpO4AQY08uCzByPVB1tH2KD5cQ__700.jpg",
+      "id": 7
+    },
+    {
+      "name": "Maxwell ",
+      "atk": 43,
+      "def": 32,
+      "img": "https://pyxis.nymag.com/v1/imgs/d29/4a6/d8b19f15856697769dc1c586d59ce82bd8-22-cat-video-truth-smoking.rsquare.w400.jpg",
+      "id": 8
+    },
+    {
+      "name": "Steve",
+      "atk": 12,
+      "def": 63,
+      "img": "data:image/jpeg;base64,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",
+      "id": 9
+    },
+    {
+      "name": "Jennifurr",
+      "atk": 67,
+      "def": 62,
+      "img": "https://static.scientificamerican.com/sciam/cache/file/32665E6F-8D90-4567-9769D59E11DB7F26_source.jpg?w=1200",
+      "id": 10
+    },
+    {
+      "name": "Oliver",
+      "atk": 99,
+      "def": 99,
+      "img": "https://media.discordapp.net/attachments/1160177796358877237/1210310410058858596/PXL_20231217_134916469.jpg?ex=65ea1868&is=65d7a368&hm=cd7dbe7a79a6a16bb0c7f9b86420de31786c8aa1ca50dcde0337b3edb13b1057&=&format=webp&width=455&height=604",
+      "id": 11
+    },
+    {
+      "name": "Gakster",
+      "atk": 37,
+      "def": 56,
+      "img": "https://pbs.twimg.com/profile_images/1625902566943911936/VmOMOeTa_400x400.jpg",
+      "id": 12
+    },
+    {
+      "name": "Bogyó",
+      "atk": 6,
+      "def": 98,
+      "img": "https://www.usatoday.com/gcdn/-mm-/938db79d26e3ee729e6b7468e9f299d2e4ef16df/c=0-279-2491-1684/local/-/media/USATODAY/test/2013/09/05/1378400626002--NASBrd-08-11-2013-Tennessean-1-B004-2013-08-10-IMG-NAS-FATCAT-03jpg-1-1-P.jpg",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "name": "Yumi",
+      "atk": 80,
+      "def": 80,
+      "img": "https://media.discordapp.net/attachments/1160177796358877237/1215376173320765511/image.png?ex=65fc8644&is=65ea1144&hm=c09ef041b5b180d4289ffcafd7d136965715357e41c885e5a37f399ba83d8f4b&=&format=webp&quality=lossless"
+    },
+    {
+      "name": "Mimi",
+      "atk": 90,
+      "def": 10,
+      "img": "https://scontent-vie1-1.xx.fbcdn.net/v/t1.15752-9/430057765_766097141742756_334689679090900342_n.png?_nc_cat=111&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=MpRxuhkEKawAX9AmSFi&_nc_ht=scontent-vie1-1.xx&cb_e2o_trans=q&oh=03_AdTf-AtVbB6OzmK6ucYYsUzHMo1V-B0JlIlXs3tK_1YIpQ&oe=66056451",
+      "id": 15
+    },
+    {
+      "name": "Roxy",
+      "atk": 77,
+      "def": 23,
+      "img": "https://scontent-vie1-1.xx.fbcdn.net/v/t1.15752-9/421267039_357604130362968_3143436172296361272_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=8hDWIaB_7FQAX_zNNHr&_nc_ht=scontent-vie1-1.xx&cb_e2o_trans=q&oh=03_AdRyj_qFo1OgfhsR_wd0XHg3vlB4qPxQJrJmB62wcUcbSw&oe=66056D14",
+      "id": 16
+    },
+    {
+      "name": "Loni",
+      "atk": 98,
+      "def": 1,
+      "img": "https://scontent-vie1-1.xx.fbcdn.net/v/t1.15752-9/420497118_788705449786305_3599922835178585265_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=FwKgEuMtA4UAX-8qP-0&_nc_ht=scontent-vie1-1.xx&cb_e2o_trans=q&oh=03_AdQfJipbWeek0r_b0MABVGvCrwNgr8_yl5tBKc-HVSUABA&oe=660564C0",
+      "id": 17
+    },
+    {
+      "name": "Life",
+      "atk": 0,
+      "def": 0,
+      "img": "https://scontent-vie1-1.xx.fbcdn.net/v/t1.15752-9/429307714_434591338921769_6677064049571188486_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=vYZOrh0Zd5oAX-1tKQT&_nc_ht=scontent-vie1-1.xx&cb_e2o_trans=q&oh=03_AdQY-LHLHAlTqKIn4ZV2ZJn3aCBwxZhKMKpyBPTcvRkGJQ&oe=66057814",
+      "id": 18
+    },
+    {
+      "name": "Purrfect",
+      "atk": 34,
+      "def": 64,
+      "img": "https://d3544la1u8djza.cloudfront.net/APHI/Blog/2016/10_October/persians/Persian+Cat+Facts+History+Personality+and+Care+_+ASPCA+Pet+Health+Insurance+_+white+Persian+cat+resting+on+a+brown+sofa-min.jpg",
+      "id": 20
+    },
+    {
+      "id": 21,
+      "name": "Mr. Cé",
+      "atk": 80,
+      "def": 90,
+      "img": "https://scontent-vie1-1.xx.fbcdn.net/v/t1.15752-9/418658321_1563140801153269_7455630648001333270_n.png?_nc_cat=108&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=IEqgPddWu0sAX8x42mS&_nc_ht=scontent-vie1-1.xx&cb_e2o_trans=q&oh=03_AdSvyD2zmHD50RbFcGC9WS8XUvSLh5AR1MNgEOHf2wAJCA&oe=660BDA51"
+    }
+  ]
+}

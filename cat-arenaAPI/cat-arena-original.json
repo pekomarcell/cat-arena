@@ -1,0 +1,28 @@
+{
+  "cats": [
+    {
+      "name": "Cirmi",
+      "atk": 10,
+      "def": 20,
+      "img": "./assets/depositphotos_54998613-stock-photo-ginger-cat.jpg"
+    },
+    {
+      "name": "bela",
+      "atk": 12,
+      "def": 60,
+      "img": "./assets/istockphoto-1067347086-612x612.jpg"
+    },
+    {
+      "name": "sanyi",
+      "atk": 60,
+      "def": 30,
+      "img": "./assets/pexels-marko-blazevic-774731.jpg"
+    },
+    {
+      "name": "Snorlax",
+      "atk": 99,
+      "def": 37,
+      "img": "./assets/pexels-pixabay-416160.jpg"
+    }
+  ]
+}
