@@ -1,4 +1,4 @@
-1. open terminal in cat-arena folder
+1. open terminal in the root folder
 2. npm install
 3. npm run start-backend 
 4. open another terminal
